@@ -1,0 +1,15 @@
+apiVersion: apiextensions.k8s.io/v1beta1
+kind: CustomResourceDefinition
+metadata:
+  name: demos.arindam.com
+spec:
+  group: arindam.com
+  names:
+    kind: Demo
+    listKind: DemoList
+    plural: demos
+    singular: demo
+  scope: Namespaced
+  subresources:
+    status: {}
+  version: v1alpha1

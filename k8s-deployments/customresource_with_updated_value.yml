@@ -1,0 +1,14 @@
+apiVersion: arindam.com/v1alpha1
+kind: Demo
+metadata:
+  name: demo-play
+  namespace: default
+  labels:
+    app: hello-label
+spec:
+  demo.properties:
+    - A
+    - B
+    - C
+    - D
+    - E
